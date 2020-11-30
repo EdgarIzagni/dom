@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <nav class="menu" id="menu">
+        <a class="menu__item" href="#section1">Reloj y alarma</a>
+        <a class="menu__item" href="#section2">Eventos del teclado</a>
+        <a class="menu__item" href="#section3">Cuenta regresiva</a>
+        <a class="menu__item" href="#section4">Sección 4</a>
+        <a class="menu__item" href="#section5">Sección 5</a>
+      </nav>
+    </aside>
+
+    <!--reloj y alarma-->
+    <section id="section1" class="seccion">
+      <h2 class="seccion__title">Reloj y alarma</h2>
+      <p class="viewTime" id="textTime"></p>
+      <audio src="./assets/audio/alarma.mp3" id="audio" loop></audio>
+      <div class="btnGroup">
+        <button id="btnInitClock" type="button">Inicar reloj</button>
+        <button id="btnStopClock" type="button">Detener reloj</button>
+        <button id="btnInitAlarm" type="button">Inicar alarma</button>
+        <button id="btnStopAlarm" type="button">Detener alarma</button>
+      </div>
+    </section>
+
+    <!--eventos de teclado-->
+    <section id="section2" class="seccion">
+      <h2 class="seccion__title">Eventos del teclado</h2>
+      <div class="panel" id="stage">
+        <span class="shape" id="circle"></span>
+      </div>
+    </section>
+
+    <!--countodown-->
+    <section id="section3" class="seccion">
+      <h2 class="seccion__title">Cuenta regresiva</h2>
+      <p class="countdown" id="countdown"></p>
+    </section>
+
+    <section id="section4" class="seccion">
+      <h2 class="seccion__title">Seccion 4</h2>
+    </section>
+
+    <section id="section5" class="seccion">
+      <h2 class="seccion__title">Seccion 5</h2>
+    </section>
+
+    <button class="btn" id="btnActiveMenu">
+      <img src="./assets/img/menu.png" alt="logo del menu" id="menuIcon" />
+    </button>
+    <button class="btn btn__themeDark" id="btnThemeDark">
+      <img src="./assets/img/flecha-hacia-arriba.png" alt="logo del menu" />
+    </button>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
